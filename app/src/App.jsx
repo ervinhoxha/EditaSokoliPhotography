@@ -1,12 +1,7 @@
-import './App.css'
+import './App.css';
 
 function App() {
-
-  return (
-    <>
-      
-    </>
-  )
+  return <>Edita Sokoli Photography</>;
 }
 
-export default App
+export default App;
