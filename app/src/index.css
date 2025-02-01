@@ -1,2 +1,28 @@
 :root {
+  --primary-color: #f15025;
+  --secondary-color: #111111;
+  --tertiary-color: #171717;
+  --quaternary-color: #222222;
+  --white-color: #ffffff;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-family: var(--font-family);
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.appwidth {
+  width: 85%;
+}
+
+.active {
+  border-bottom: 1px solid var(--primary-color);
 }
