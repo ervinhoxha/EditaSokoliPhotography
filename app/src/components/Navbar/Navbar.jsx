@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import styles from './style.module.less';
-import { NavLink } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { Menu } from './Menu';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuOpen = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <div className={styles.navbarContainer}>
@@ -21,41 +25,7 @@ export const Navbar = () => {
         </button>
 
         <div className={`${styles.navbar} ${menuOpen ? styles.navOpen : ''}`}>
-          <NavLink
-            to="/"
-            activeclassname={styles.active}
-            onClick={() => setMenuOpen(false)}
-          >
-            Ballina
-          </NavLink>
-          <NavLink
-            to="/about"
-            activeclassname={styles.active}
-            onClick={() => setMenuOpen(false)}
-          >
-            Rreth ne
-          </NavLink>
-          <NavLink
-            to="/portfolio"
-            activeclassname={styles.active}
-            onClick={() => setMenuOpen(false)}
-          >
-            Portfolio
-          </NavLink>
-          <NavLink
-            to="/testimonials"
-            activeclassname={styles.active}
-            onClick={() => setMenuOpen(false)}
-          >
-            Reagimet
-          </NavLink>
-          <NavLink
-            to="/contact"
-            activeclassname={styles.active}
-            onClick={() => setMenuOpen(false)}
-          >
-            Kontakti
-          </NavLink>
+          <Menu handleMenuOpen={handleMenuOpen} />
         </div>
       </div>
     </div>
