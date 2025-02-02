@@ -26,3 +26,8 @@ body {
 .active {
   border-bottom: 1px solid var(--primary-color);
 }
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
