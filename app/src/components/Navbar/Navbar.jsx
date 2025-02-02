@@ -23,35 +23,35 @@ export const Navbar = () => {
         <div className={`${styles.navbar} ${menuOpen ? styles.navOpen : ''}`}>
           <NavLink
             to="/"
-            activeClassName={styles.active}
+            activeclassname={styles.active}
             onClick={() => setMenuOpen(false)}
           >
             Ballina
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName={styles.active}
+            activeclassname={styles.active}
             onClick={() => setMenuOpen(false)}
           >
             Rreth ne
           </NavLink>
           <NavLink
             to="/portfolio"
-            activeClassName={styles.active}
+            activeclassname={styles.active}
             onClick={() => setMenuOpen(false)}
           >
             Portfolio
           </NavLink>
           <NavLink
             to="/testimonials"
-            activeClassName={styles.active}
+            activeclassname={styles.active}
             onClick={() => setMenuOpen(false)}
           >
             Reagimet
           </NavLink>
           <NavLink
             to="/contact"
-            activeClassName={styles.active}
+            activeclassname={styles.active}
             onClick={() => setMenuOpen(false)}
           >
             Kontakti
