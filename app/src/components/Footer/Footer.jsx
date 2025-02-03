@@ -1,7 +1,6 @@
 import styles from './style.module.less';
 import { Menu } from '../Navbar/Menu';
-import { RiInstagramLine } from 'react-icons/ri';
-import { FaFacebook } from 'react-icons/fa';
+import { SocialMedia } from '../SocilaMedia/SocialMedia';
 
 export const Footer = () => {
   return (
@@ -26,13 +25,8 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className={styles.socialLinks}>
-            <a href="https://www.instagram.com/editasokoliphotographyy/">
-              <RiInstagramLine />
-            </a>
-            <a href="https://www.facebook.com/editasokoliphotography">
-              <FaFacebook />
-            </a>
+          <div>
+            <SocialMedia />
           </div>
         </div>
       </div>

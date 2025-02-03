@@ -5,6 +5,7 @@
   --quaternary-color: #222222;
   --white-color: #ffffff;
   --font-family: 'Montserrat', sans-serif;
+  --font-secondary: 'Pacifico', cursive;
 }
 
 html {
@@ -30,4 +31,5 @@ body {
 a {
   text-decoration: none;
   color: var(--white-color);
+  cursor: pointer;
 }
